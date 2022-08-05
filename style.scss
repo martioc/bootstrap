@@ -35,6 +35,27 @@
 	"custom-color": yellowgreen,
 );
 
+
+$primary: red;
+$secondary: blue;
+$success: green;
+$info: yellow;
+$warning:pink;
+$danger:black;
+$light:white;
+$dark: grey;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $sucees,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark,
+ );
+
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
