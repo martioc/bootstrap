@@ -1,0 +1,22 @@
+/* Error: Only 2 arguments allowed, but 3 were passed.
+ *    ,--> style.scss
+ * 8  | @include media-breakpoint-up(xs,sm,md) {
+ *    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *    '
+ *    ,--> ..\node_modules\bootstrap\scss\mixins\_breakpoints.scss
+ * 61 | @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+ *    |        =========================================================== declaration
+ *    '
+ *   style.scss 8:1  media-breakpoint-up()
+ *   style.scss 8:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Only 2 arguments allowed, but 3 were passed.\a    \250c \2500 \2500 > style.scss\a 8  \2502  @include media-breakpoint-up(xs,sm,md) {\d\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a    \2575 \a    \250c \2500 \2500 > ..\\node_modules\\bootstrap\\scss\\mixins\\_breakpoints.scss\a 61 \2502  @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {\a    \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a    \2575 \a   style.scss 8:1  media-breakpoint-up()\a   style.scss 8:1  root stylesheet";
+}
