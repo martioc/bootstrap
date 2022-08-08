@@ -10926,6 +10926,11 @@ textarea.form-control-lg {
   background-color: greenyellow;
 }
 
+.col, .col-auto {
+  background-color: yellow;
+  margin: 2px;
+}
+
 .col, .col-sm, .col-lg, .col-xl {
   background-color: yellow;
   margin: 2px;
