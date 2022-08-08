@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+*{
+    background-color: greenyellow;
+}
+
+.col,.col-auto{
+    background-color: yellow;
+    margin:2px;
+}
