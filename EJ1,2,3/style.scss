@@ -5,35 +5,25 @@
 @import "./node_modules/bootstrap/scss/maps";
 
 
-@include media-breakpoint-up(sm) {
-    .francolachupa{
-        background-color: aqua;
-    }
- }
- @include media-breakpoint-up(md) {
-    .francolachupa{
-        background-color: green;
-    }
- }
- @include media-breakpoint-up(lg) {
-    .francolachupa{
-        background-color: blue;
-    }
- }
- @include media-breakpoint-up(xl) {
-    .francolachupa{
-        background-color: yellow;
-    }
- }
- @include media-breakpoint-up(xxl) {
+@include media-breakpoint-up(xs,sm,md) {
     .francolachupa{
         background-color: violet;
     }
  }
+ @include media-breakpoint-up(lg,xl,xxl) {
+    .francolachupa{
+        background-color: green;
+    }
+ }
+ $grid-breakpoints:(
+    xs:0,
+    sm:250px,
+    md:500px,
+    lf:750px,
+    xl:1000px,
+    xxl:1250px
 
- $custom-theme-colors: (
-	"custom-color": yellowgreen,
-);
+ )
 
 
 $primary: red;
@@ -48,7 +38,7 @@ $dark: grey;
 $theme-colors: (
   primary: $primary,
   secondary: $secondary,
-  success: $sucees,
+  success: $success,
   info: $info,
   warning: $warning,
   danger: $danger,
